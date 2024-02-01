@@ -1,0 +1,34 @@
+.navbar-top {
+  background: #353535;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-options {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  /* width: 100dvw; */
+  margin: 0;
+  justify-content: space-between;
+}
+
+.navbar__button {
+ margin-right: 1em;
+}
+
+.navbar__search {
+ /* flex-grow: 1;
+ margin-left: 1em; */
+}
+
+.navbar__logo {
+ /* margin-left: auto; */
+}
+
+@media (max-width: 600px) {
+ .navbar__search {
+    display: none;
+ }
+}

@@ -1,0 +1,46 @@
+.slide-item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: black !important;
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid #FAA500 !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FAA500 !important;
+}
+
+.banner-wrapper {
+ position: relative;
+}
+
+.banner-title {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 50%; 
+  left: 25%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+}
+
+.banner-title {
+  font-weight: 300;
+}
+
+.banner-title button {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #FAA500;
+  border: none;
+  border-radius: 10px;
+}
