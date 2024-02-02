@@ -2,3 +2,38 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAFAFA;
+}
+
+.navbar-top {
+  width: 100%;
+  background: #353535;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-top p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 24px;
+  margin: 0;
+}
+
+.main-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+
+  }
+}

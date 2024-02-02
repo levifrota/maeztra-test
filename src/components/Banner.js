@@ -7,6 +7,7 @@ import Banner2 from '../assets/ftECh3G-2.png'
 
 function Banner() {
   const [responsiveSlide, setResponsiveSlide] = useState(Banner1)
+  const applySpaceBetween = false
   const images = [
     { id: '1', image: responsiveSlide},
     { id: '2', image: responsiveSlide},
@@ -42,6 +43,7 @@ function Banner() {
           disableOnInteraction: false,
         }}
       modules={Autoplay}
+      spaceBetween={applySpaceBetween ? 10 : 0}
       >
       {images.map( (item) => (
         <SwiperSlide key={item.id}>
