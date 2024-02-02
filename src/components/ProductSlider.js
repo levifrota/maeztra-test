@@ -6,6 +6,7 @@ import Product1 from '../assets/308x381.png';
 import Product2 from '../assets/308x381-2.png';
 
 function ProductSlider() {
+  const [slidesPerView, setSlidesPerView] = useState(5)
   const products = [
     {
       id: '1',
@@ -49,13 +50,30 @@ function ProductSlider() {
       description: 'A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.',
       image: Product2
     },
-  ]
+  ];
+  useEffect(() => {
+    function handleResize() {
+      if(window.innerWidth < 540) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(5);
+      }
+
+    }
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  });
 
   return (
     <div className='product-slider'>
       <h2>As Mais Pedidas</h2>
       <Swiper
-        slidesPerView={5}
+        slidesPerView={slidesPerView}
         navigation
         autoplay={{
             delay: 5000,

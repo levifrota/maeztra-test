@@ -5,7 +5,11 @@ import {
   faXTwitter,
   faYoutube,
   faLinkedin,
+  faCcVisa,
+  faCcMastercard
 } from "@fortawesome/free-brands-svg-icons";
+import VtexIcon from "../assets/poweredByImage#vtex.png"
+import MaeztraIcon from "../assets/[2019-05]-Maeztra---Logo----cor.png"
 import '../styles/Footer.css';
 
 const Footer = () => {
@@ -55,6 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
+      <div className="social">
           <a
             target="_blank"
             rel="noreferrer"
@@ -83,8 +88,25 @@ const Footer = () => {
           >
             <FontAwesomeIcon icon={faLinkedin} className="social-img" />
           </a>
-        
+        </div>
+
+      <div className="cards">
+        <FontAwesomeIcon icon={faCcVisa} className="cards-brands"/>
+        <FontAwesomeIcon icon={faCcMastercard} className="cards-brands" />
+        <FontAwesomeIcon icon={faCcVisa} className="cards-brands" />
+        <FontAwesomeIcon icon={faCcMastercard} className="cards-brands" />
       </div>
+      <div className="vtex-maeztra">
+        <div className="vtex">
+          <p>Powered By</p>
+          <img src={VtexIcon} alt="VTEX"></img>
+        </div>
+        <div className="maeztra">
+          <p>Developed By</p>
+          <img src={MaeztraIcon} alt="Maeztra"></img>
+        </div>
+      </div>
+            </div>
     </footer>
   );
 };

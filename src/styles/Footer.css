@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   position: relative;
   z-index: 20;
 }
@@ -60,10 +60,22 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 20%;
 }
 
-.social-img {
-  height: 1.5rem;
+.social-img, .cards-brands {
+  color: #fff;
+  height: 2rem;
+}
+
+.cards {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-brands {
+  padding: 0 .5rem ;
 }
 
 a {
@@ -89,4 +101,16 @@ a:hover {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+.footer-bottom {
+  background-color: #353535;
+  color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vtex-maeztra{
+  display: flex;
 }
