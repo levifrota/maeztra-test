@@ -17,9 +17,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  /* opacity: 0; */
-  /* visibility: hidden; */
-  /* z-index: 202; */
   transition: all .2s ease-out;
 }
 
