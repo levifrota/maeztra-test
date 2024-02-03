@@ -8,7 +8,7 @@ import {
   faCcVisa,
   faCcMastercard,
 } from '@fortawesome/free-brands-svg-icons';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import VtexIcon from '../assets/poweredByImage#vtex.png';
 import MaeztraIcon from '../assets/[2019-05]-Maeztra---Logo----cor.png';
 import '../styles/Footer.css';
@@ -62,7 +62,11 @@ const Footer = () => {
               onClick={() => setButtonOption(1)}
             >
               <h2>Informações</h2>
+              {option1 ? (
               <FontAwesomeIcon icon={faPlus} className="icon-plus" />
+            ) : (
+              <FontAwesomeIcon icon={faMinus} className="icon-plus" />
+            )}
             </div>
             <div
               className="footer-list"
@@ -86,7 +90,11 @@ const Footer = () => {
               onClick={() => setButtonOption(2)}
             >
               <h2>Minha Conta</h2>
+            {option2 ? (
               <FontAwesomeIcon icon={faPlus} className="icon-plus" />
+            ) : (
+              <FontAwesomeIcon icon={faMinus} className="icon-plus" />
+            )}
             </div>
             <div
               className="footer-list"
@@ -110,7 +118,11 @@ const Footer = () => {
               onClick={() => setButtonOption(3)}
             >
               <h2>Onde nos encontrar</h2>
+            {option3 ? (
               <FontAwesomeIcon icon={faPlus} className="icon-plus" />
+            ) : (
+              <FontAwesomeIcon icon={faMinus} className="icon-plus" />
+            )}
             </div>
             <div
               className="footer-list"

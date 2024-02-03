@@ -12,19 +12,22 @@ import '../styles/Navbar.css';
 import Logo from '../assets/b0652beb9756e9e0fe46f9f73c0e3c38.png';
 
 const Navbar = () => {
-  const [sandwichMenu, setSandwichMenu] = useState(true);
+  const [sandwichMenu, setSandwichMenu] = useState(null);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
 
   const OnSandwichButtonClick = () => {
-    setSandwichMenu(sandwichMenu === true ? false : true);
+    // setSandwichMenu(sandwichMenu === true ? false : true);
+     if (window.innerWidth < 800) {
+      setSandwichMenu(prevState => prevState !== true);
+    }
   };
 
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth <= 800) {
-        setSandwichMenu(true);
-      } else {
         setSandwichMenu(false);
+      } else {
+        setSandwichMenu(null);
       }
     }
 
@@ -67,32 +70,25 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div
-              className="nav-btn-desk"
-              style={
-                sandwichMenu === true
-                  ? { display: 'none' }
-                  : { display: 'flex' }
-              }
-            >
-              <button className="navbar__button">
-                <FontAwesomeIcon className="navbar_icon" icon={faUser} />
+          <div className="nav-btn-desk">
+            <button className="navbar__button">
+              <FontAwesomeIcon className="navbar_icon" icon={faUser} />
 
-                <p>Minha Conta</p>
-              </button>
+              <p>Minha Conta</p>
+            </button>
 
-              <button className="navbar__button">
-                <FontAwesomeIcon className="navbar_icon" icon={faHeart} />
+            <button className="navbar__button">
+              <FontAwesomeIcon className="navbar_icon" icon={faHeart} />
 
-                <p>Minha Conta</p>
-              </button>
+              <p>Minha Conta</p>
+            </button>
 
-              <button className="navbar__button">
-                <FontAwesomeIcon className="navbar_icon" icon={faBagShopping} />
+            <button className="navbar__button">
+              <FontAwesomeIcon className="navbar_icon" icon={faBagShopping} />
 
-                <p>Meu Carrinho</p>
-              </button>
-            </div>
+              <p>Meu Carrinho</p>
+            </button>
+          </div>
 
           <div className="buttonOptionArea">
             <button
@@ -104,11 +100,9 @@ const Navbar = () => {
 
             <div
               className="nav-btn"
-              style={
-                sandwichMenu === true
-                  ? { display: 'flex' }
-                  : { display: 'none' }
-              }
+              style={{
+                display: sandwichMenu === null || sandwichMenu === true ? 'flex' : 'none'
+              }}
             >
               <button className="navbar__button">
                 <FontAwesomeIcon className="navbar_icon" icon={faUser} />
