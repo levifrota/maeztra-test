@@ -67,6 +67,33 @@ const Navbar = () => {
             </div>
           </div>
 
+          <div
+              className="nav-btn-desk"
+              style={
+                sandwichMenu === true
+                  ? { display: 'none' }
+                  : { display: 'flex' }
+              }
+            >
+              <button className="navbar__button">
+                <FontAwesomeIcon className="navbar_icon" icon={faUser} />
+
+                <p>Minha Conta</p>
+              </button>
+
+              <button className="navbar__button">
+                <FontAwesomeIcon className="navbar_icon" icon={faHeart} />
+
+                <p>Minha Conta</p>
+              </button>
+
+              <button className="navbar__button">
+                <FontAwesomeIcon className="navbar_icon" icon={faBagShopping} />
+
+                <p>Meu Carrinho</p>
+              </button>
+            </div>
+
           <div className="buttonOptionArea">
             <button
               className="navbar_button sandwich-menu"
