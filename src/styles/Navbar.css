@@ -7,8 +7,8 @@
   top: 0;
   z-index: 200;
   background: #fff;
-  transition: all .2s ease-in-out;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .navbar-options-container {
@@ -35,7 +35,8 @@
   justify-content: center;
   align-items: center;
 }
-.navbar-search .search-input {
+.navbar-search .search-input,
+.search-input-mob {
   height: 40px;
   padding: 0 0 0 24px;
   line-height: 40px;
@@ -59,7 +60,7 @@
   font-weight: 400;
   color: #fff;
   cursor: pointer;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .navbar__button {
@@ -95,16 +96,27 @@
   cursor: pointer;
   border-radius: 8px;
 }
+.search-input-mob {
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
 
-.seachIconButton{
+.searchButton {
   display: none;
   position: absolute;
   right: 40px;
   width: 32px;
   height: 32px;
+  overflow: visible;
 }
 
-.bagIconButton{
+.searchIconButton {
+  height: 100%;
+}
+
+.bagIconButton {
   display: none;
   width: 32px;
   height: 32px;
@@ -118,10 +130,10 @@
 }
 
 @media (max-width: 900px) {
- .search-button {
+  .search-button {
     width: 80px;
- }
- .sandwich-menu {
+  }
+  .sandwich-menu {
     display: none;
   }
   .nav-btn {
@@ -134,8 +146,24 @@
     display: none;
   }
 
-  .seachIconButton {
+  .searchButton {
     display: block;
+    background: transparent;
+    border: none;
+  }
+
+  .search-input-mob {
+    width: 50%;
+    display: block;
+    right: 0;
+    position: relative;
+    top: 160%;
+    left: 25%;
+  }
+
+  .search-input-mob {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .buttonOptionArea {
@@ -147,13 +175,14 @@
     display: block;
   }
 
-  .navbar__logo{
+  .navbar__logo {
     width: 110px;
     position: absolute;
     left: 80px;
   }
 
-  .search-input, .search-button {
+  .search-input,
+  .search-button {
     display: none;
   }
 
@@ -171,7 +200,7 @@
   .sandwich-menu {
     display: block;
   }
-  .navbar__button{
+  .navbar__button {
     margin-right: 0;
   }
- }
+}

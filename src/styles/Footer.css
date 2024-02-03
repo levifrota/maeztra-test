@@ -118,29 +118,24 @@ a:hover {
   margin-left: 20px;
 }
 
-.buttonFutterOptions{
+.buttonFutterOptions {
   height: 47px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.imgFooterOptions {
+.icon-plus {
   display: none;
-  width: 15px;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (max-width: 800px) {
-  .imgFooterOptions {
-    display: flex;
-    width: 15px;
-    align-items: center;
-    justify-content: center;
+  .icon-plus {
+    display: block;
   }
 
-  .footer-navigation, .footer-contact, .footer-social {
+  .footer-navigation,
+  .footer-contact,
+  .footer-social {
     padding: 0px;
   }
   .footer-container {
@@ -184,5 +179,4 @@ a:hover {
     align-items: center;
     flex-direction: column;
   }
-
 }

@@ -4,13 +4,14 @@
   object-fit: cover;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: black !important;
   padding: 0 3%;
 }
 
 .swiper-pagination-bullet {
-  border: 2px solid #FAA500 !important;
+  border: 2px solid #faa500 !important;
   width: 1rem !important;
   height: 1rem !important;
   background: transparent !important;
@@ -18,33 +19,33 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #FAA500 !important;
-} 
+  background-color: #faa500 !important;
+}
 
 .banner-wrapper {
- position: relative;
+  position: relative;
 }
 
 .banner-title {
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  top: 50%; 
-  left: 25%; 
-  transform: translate(-50%, -50%); 
-  color: white; 
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .banner-title {
   margin-left: 10%;
 }
 
-.bannerH1{
+.bannerH1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
 }
 
-.bannerH3{
+.bannerH3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
@@ -54,23 +55,23 @@
 .banner-title button {
   padding: 1rem 2rem;
   color: #fff;
-  background-color: #FAA500;
+  background-color: #faa500;
   border: none;
   border-radius: 10px;
 }
 
 @media (max-width: 800px) {
-
-  .bannerH1{
+  .bannerH1 {
     margin-top: 0;
     font-size: 30px;
     line-height: 37px;
   }
-  .bannerH3{
+  .bannerH3 {
     font-size: 14px;
     line-height: 17px;
   }
-  .bannerH3,.bannerH1{
+  .bannerH3,
+  .bannerH1 {
     padding-left: 70px;
     width: 230px;
   }

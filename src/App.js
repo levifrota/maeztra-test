@@ -1,28 +1,26 @@
-import React, { useEffect, useState } from "react";
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
-import MaeztraBrandsSlider from "./components/MaeztraBrandsSlider";
-import ProductSlider from "./components/ProductSlider";
-import NewCollection from "./components/NewCollection";
-import Newsletter from "./components/Newsletter";
-import Footer from "./components/Footer";
-import Modal from "./components/Modal";
-import OptionsBar from "./components/OptionsBar"
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
+import MaeztraBrandsSlider from './components/MaeztraBrandsSlider';
+import ProductSlider from './components/ProductSlider';
+import NewCollection from './components/NewCollection';
+import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
+import Modal from './components/Modal';
+import OptionsBar from './components/OptionsBar';
 
-function App() {
+const App = () => {
   const [showModal, setShowModal] = useState(() => {
-    return !localStorage.getItem("visited");
+    return !localStorage.getItem('visited');
   });
 
   useEffect(() => {
-    if (!localStorage.getItem("visited")) {
-      localStorage.setItem("visited", "true");
+    if (!localStorage.getItem('visited')) {
+      localStorage.setItem('visited', 'true');
       setShowModal(true);
     }
   }, []);
-
-  console.log(showModal);
 
   const handleCloseModal = () => {
     setShowModal(false);
@@ -35,7 +33,7 @@ function App() {
         <p>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</p>
       </div>
       <Navbar />
-      <OptionsBar/>
+      <OptionsBar />
       <div className="container">
         <Banner />
       </div>
@@ -48,6 +46,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

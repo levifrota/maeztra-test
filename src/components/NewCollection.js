@@ -1,7 +1,7 @@
-import CollectionBanner from "../assets/1vLCv01.png.png";
-import "../styles/NewCollection.css";
+import CollectionBanner from '../assets/1vLCv01.png.png';
+import '../styles/NewCollection.css';
 
-function NewCollection() {
+const NewCollection = () => {
   return (
     <div className="collection">
       <div className="collection-description">
@@ -27,6 +27,6 @@ function NewCollection() {
       </div>
     </div>
   );
-}
+};
 
 export default NewCollection;

@@ -1,29 +1,29 @@
 .product-slider {
-  padding:0 8%;
+  padding: 0 8%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 
-.product-banners{
+.product-banners {
   max-width: 310px;
   height: 600px;
 }
 
-.product-price{
+.product-price {
   margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 30.5px;
 }
-.product-title{
+.product-title {
   margin: 5px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 24.5px;
 }
-.product-description{
+.product-description {
   font-weight: 400;
   font-size: 12px;
   line-height: 18.25px;
@@ -31,7 +31,7 @@
 }
 
 .product-add {
-  background-color:#FAA500;
+  background-color: #faa500;
   position: absolute;
   bottom: 0;
   margin: 0 auto;
@@ -47,7 +47,7 @@
   padding: 0 27px;
 }
 
-.spotlight{
+.spotlight {
   font-weight: 700;
   line-height: 50px;
   font-size: 32px;
