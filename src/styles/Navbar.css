@@ -12,32 +12,37 @@
 }
 
 .navbar-options-container {
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 5%;
 }
 
 .navbar-search {
   max-width: 790px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .search {
+  display: flex;
+  width: 90%;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
-
 .navbar-search .search-input {
   height: 40px;
-  padding: 0 24px;
+  padding: 0 0 0 24px;
   line-height: 40px;
   width: 100%;
   border-radius: 10px;
   border: none;
   background: #efefef;
-  height: 40px;
   outline: none;
   box-shadow: none;
 }
@@ -46,7 +51,6 @@
   width: 120px;
   height: 100%;
   position: absolute;
-  top: 0;
   right: 0;
   background: #faa500;
   border-radius: 8px;
@@ -60,10 +64,114 @@
 
 .navbar__button {
   margin-right: 1em;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+  width: 134px;
+  height: 46px;
+  border-style: hidden;
+  border-width: 1px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-@media (max-width: 600px) {
- .navbar__search {
-    display: none;
- }
+.navbar__button:hover {
+  border-style: solid;
+  border-color: #faa500;
 }
+
+.navbar_icon {
+  margin-right: 1ch;
+}
+
+.nav-btn {
+  display: flex;
+}
+.sandwich-menu {
+  display: none;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.seachIconButton{
+  display: none;
+  position: absolute;
+  right: 40px;
+  width: 32px;
+  height: 32px;
+}
+
+.bagIconButton{
+  display: none;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: -20px;
+}
+
+.menubutton {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 900px) {
+ .search-button {
+    width: 80px;
+ }
+ .sandwich-menu {
+    display: none;
+  }
+  .nav-btn {
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .search-button {
+    display: none;
+  }
+
+  .seachIconButton {
+    display: block;
+  }
+
+  .buttonOptionArea {
+    position: absolute;
+    left: 20px;
+  }
+
+  .bagIconButton {
+    display: block;
+  }
+
+  .navbar__logo{
+    width: 110px;
+    position: absolute;
+    left: 80px;
+  }
+
+  .search-input, .search-button {
+    display: none;
+  }
+
+  .nav-btn {
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 999;
+  }
+
+  .sandwich-menu {
+    display: block;
+  }
+  .navbar__button{
+    margin-right: 0;
+  }
+ }

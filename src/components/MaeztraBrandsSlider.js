@@ -54,7 +54,7 @@ function MaeztraBrandsSlider() {
   return (
     <div className='maeztra-brands-slider'>
       <div className="buy-maeztra">
-        <h3>Por que comprar na Maeztra?</h3>
+        <h3 className='title1'>Por que comprar na Maeztra?</h3>  
         <Swiper
         slidesPerView={slidesPerView}
         autoplay={{
@@ -66,7 +66,7 @@ function MaeztraBrandsSlider() {
         grabCursor={true}
         className='maeztra-swiper'
         >
-        {maeztraSlides.map( (item) => (
+        {maeztraSlides.map( (item) => ( 
           <SwiperSlide key={item.id}>
           <div className='maeztra-wrapper'>
               <img src={item.image} alt="Marcas" className='slide-item'></img>
@@ -81,7 +81,7 @@ function MaeztraBrandsSlider() {
       </div>
       
       <div className='brands-slider'>
-        <h2>Marcas Parceiras</h2>
+        <h2 className='title2'>Marcas Parceiras</h2>
         <Swiper
           slidesPerView={slidesPerView}
           autoplay={{

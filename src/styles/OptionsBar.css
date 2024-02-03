@@ -1,0 +1,30 @@
+.optionsBar {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listOptions {
+  width: 60%;
+  color: #353535;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.itensOptionBar {
+  cursor: pointer;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .optionsBar {
+    display: none;
+  }
+}

@@ -6,6 +6,7 @@
 
 .swiper-button-prev, .swiper-button-next {
   color: black !important;
+  padding: 0 3%;
 }
 
 .swiper-pagination-bullet {
@@ -18,7 +19,7 @@
 
 .swiper-pagination-bullet-active {
   background-color: #FAA500 !important;
-}
+} 
 
 .banner-wrapper {
  position: relative;
@@ -34,7 +35,20 @@
 }
 
 .banner-title {
-  font-weight: 300;
+  margin-left: 10%;
+}
+
+.bannerH1{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.bannerH3{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  width: 460px;
 }
 
 .banner-title button {
@@ -43,4 +57,37 @@
   background-color: #FAA500;
   border: none;
   border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+
+  .bannerH1{
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .bannerH3{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .bannerH3,.bannerH1{
+    padding-left: 70px;
+    width: 230px;
+  }
+
+  .banner-title {
+    margin-left: 15%;
+    padding-bottom: 50px;
+  }
+
+  .banner-title button {
+    width: 76px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 23%;
+    right: 77%;
+  }
 }

@@ -5,22 +5,28 @@
 
 .maeztra-swiper {
   display: flex;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: center;
   align-items: center;
   margin: 0 -7.5px;
 }
 
 .maeztra-brands-slider {
-  margin: 0 !important; 
+  max-width: 100%;
+  margin: 0;
+  padding: 0 8%;
 }
 
-.buy-maeztra,.brands-slider {
+.buy-maeztra,
+.brands-slider {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.brands-slider {
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .maeztra-info {
@@ -32,7 +38,7 @@
 .maeztra-wrapper {
   display: flex;
   align-items: center;
-  margin: 0 7.5px;
+  margin: 0 3px;
   background: #efefef;
   border-radius: 4px;
   padding: 16px 0 16px 27px;
@@ -44,9 +50,9 @@
   padding: 0 1rem 0 0;
 }
 
-
 .brand-item {
   border-radius: 4px;
+  width: 100%;
 }
 
 .maeztra-info p {
@@ -55,4 +61,26 @@
   color: #000;
   line-height: 18px;
   margin: 0;
+}
+
+.title2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 50px;
+  color: #353535;
+}
+
+.title1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #353535;
+}
+
+@media (max-width: 800px) {
+  .brands-slider {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
 }

@@ -1,4 +1,5 @@
 .newsletter {
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,4 +89,31 @@
   justify-content: center;
   height: 100%;
   overflow: visible;
+}
+
+
+@media (max-width: 800px) {
+  .newsletter-title{
+    text-align: left;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  .newsletter-button {
+    border-radius: 0.25rem;
+    width: 79px;
+    height: 26px;
+  }
+  .newsletter-text{
+    border: 0.0625rem solid;
+    border-radius: 0.25rem;
+    width: 204px;
+    min-height: 26px;
+    height: 26px;
+  }
+  .newsletter-input{
+    width: 100%;
+    justify-content: space-evenly;
+  }
 }

@@ -50,8 +50,8 @@ function Banner() {
         <div className='banner-wrapper'>
             <img src={item.image} alt="Maeztra" className='slide-item'></img>
             <div className='banner-title'>
-              <h1>Promoções de Outono</h1>
-              <h3>Confiras os melhores looks para combinar com você nesse Outono</h3>
+              <h1 className='bannerH1'>Promoções de Outono</h1>
+              <h3 className='bannerH3'>Confiras os melhores looks para combinar com você nesse Outono</h3>
               <button>Conferir</button>
             </div>
         </div>
